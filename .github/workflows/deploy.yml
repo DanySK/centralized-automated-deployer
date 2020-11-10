@@ -8,7 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@722adc6
+      uses: actions/checkout@v1
+    - uses: benjlevesque/short-sha@v1.1
+      id: short-sha
+      with:
+        length: 7
     - name: Deploy to DanySK/Upgradle
       uses: MikeHamilton-RW/deploy-common-actions@v1.0
       env:
@@ -18,4 +22,4 @@ jobs:
         DEVELOPMENT_BRANCH: "master"
         GHA_DEPLOYMENT_FOLDER: "gradle-check-central"
         COMMIT_MESSAGE: 'GHA CI Update: "${{ github.event.commits[0].message }}", see ${{ github.event.commits[0].url }}'
-        GHA_DEPLOY_BRANCH_NAME: gh_actions_${{ github.event.commits[0].sha }}
+        GHA_DEPLOY_BRANCH_NAME: "gh_actions_${{ steps.short-sha.outputs.sha }}"
