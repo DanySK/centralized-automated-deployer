@@ -16,7 +16,7 @@ jobs:
     - name: Deploy to DanySK/Upgradle
       uses: MikeHamilton-RW/deploy-common-actions@v1.0
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         USER: "DanySK"
         REPOSITORY: "upgradle"
         DEVELOPMENT_BRANCH: "master"
