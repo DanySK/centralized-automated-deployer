@@ -17,5 +17,5 @@ jobs:
         REPOSITORY: "upgradle"
         DEVELOPMENT_BRANCH: "master"
         GHA_DEPLOYMENT_FOLDER: "gradle-check-central"
-        COMMIT_MESSAGE: GHA CI Update ${{ github.event.head_commit.message }}
-        GHA_DEPLOY_BRANCH_NAME: gh_actions_${{ github.event.head_commit.abbreviatedOid }}
+        COMMIT_MESSAGE: GHA CI Update ${{ github.event.head.message }}, see ${{ github.event.head.url }}
+        GHA_DEPLOY_BRANCH_NAME: gh_actions_${{ github.event.head.sha }}
