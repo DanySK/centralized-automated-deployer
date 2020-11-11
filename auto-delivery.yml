@@ -1,8 +1,2 @@
-my-common-code-1:
-  - owner1:
-    - repo1 # Defaults to 'master'
-    - repo2: develop
-    - repo3:
-      - master
-      - develop
-  - owner2: repo1
+gradle-check-central:
+  DanySK: upgradle
