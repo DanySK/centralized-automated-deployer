@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: DanySK/autodelivery@master
       with:
-        CONFIGURATION_FILE: 'autodelivery.yml'
-        GITHUB_USER: DanySK
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        confguration_file: 'autodelivery.yml'
+        user: DanySK
+        token: ${{ secrets.GH_TOKEN }}
