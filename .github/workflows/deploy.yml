@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: DanySK/autodelivery@master
       with:
-        confguration_file: 'auto-delivery.yml'
+        configuration_file: 'auto-delivery.yml'
         user: DanySK
         token: ${{ secrets.GH_TOKEN }}
