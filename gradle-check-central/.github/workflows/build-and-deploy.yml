@@ -4,7 +4,7 @@ on:
   pull_request:
   schedule:
     - cron: '0 3 * * SUN'
-    
+
 jobs:
   Build:
     strategy:
@@ -25,8 +25,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - shell: bash 
+      - shell: bash
         run: ./gradlew check --parallel
       - if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8 }}
-        run: 
+        run:
           ./gradlew publishMavenCentralPublicationToMavenRepository --parallel
