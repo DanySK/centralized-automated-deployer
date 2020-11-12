@@ -2,3 +2,7 @@ Continuous Integration pipeline for Java 8 compatible Gradle based projects deli
   DanySK: upgradle
 Continuous Integration and delivery pipeline for Gradle plugins:
   DanySK: Template-for-Gradle-Plugins
+Automerge action:
+  DanySK:
+    - Template-for-Gradle-Plugins
+    - upgradle
