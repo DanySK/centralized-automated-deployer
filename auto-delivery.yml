@@ -1,2 +1,2 @@
-gradle-check-central:
+Continuous Integration pipeline for Java 8 compatible Gradle based projects delivering on Maven Central:
   DanySK: upgradle
