@@ -1,2 +1,4 @@
 Continuous Integration pipeline for Java 8 compatible Gradle based projects delivering on Maven Central:
   DanySK: upgradle
+Continuous Integration and delivery pipeline for Gradle plugins:
+  DanySK: Template-for-Gradle-Plugins
