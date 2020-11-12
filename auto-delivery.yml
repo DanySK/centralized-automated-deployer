@@ -1,13 +1,17 @@
+# Entries whose name begin in _ get skipped and can be used for anchoring
 _all_repositories: &everything
   DanySK:
     - Template-for-Gradle-Plugins
     - upgradle
 
-Continuous Integration pipeline for Java 8 compatible Gradle based projects delivering on Maven Central:
-  DanySK: upgradle
-Continuous Integration and delivery pipeline for Gradle plugins:
-  DanySK: Template-for-Gradle-Plugins
 Automerge action:
   *everything
+
+Continuous Integration and delivery pipeline for Gradle plugins:
+  DanySK: Template-for-Gradle-Plugins
+
+Continuous Integration pipeline for Java 8 compatible Gradle based projects delivering on Maven Central:
+  DanySK: upgradle
+
 Foreign pull request pipeline for Java 8 compatible Gradle projects:
   *everything
