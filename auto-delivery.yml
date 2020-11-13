@@ -3,12 +3,14 @@ _all_repositories: &everything
   DanySK:
     - listset
     - Template-for-Gradle-Plugins
+    - Thread-Inheritable-Resource-Loader-for-Java
     - upgradle
     - upgradle-bot
 
 _java8+_repositories: &java8_repositories
   DanySK:
     - listset
+    - Thread-Inheritable-Resource-Loader-for-Java
     - Template-for-Gradle-Plugins
     - upgradle
 
