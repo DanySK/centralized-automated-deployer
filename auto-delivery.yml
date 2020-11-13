@@ -3,6 +3,7 @@ _all_repositories: &everything
   DanySK:
     - Template-for-Gradle-Plugins
     - upgradle
+    - upgradle-bot
 
 Automerge action:
   *everything
@@ -14,4 +15,6 @@ Continuous Integration pipeline for Java 8 compatible Gradle based projects deli
   DanySK: upgradle
 
 Foreign pull request pipeline for Java 8 compatible Gradle projects:
-  *everything
+  DanySK:
+    - Template-for-Gradle-Plugins
+    - upgradle
