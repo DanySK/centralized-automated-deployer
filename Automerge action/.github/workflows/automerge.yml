@@ -12,11 +12,10 @@ on:
   check_suite:
     types:
       - completed
+  schedule:
+    cron:
+      - '0 0 * * *'
   status:
-  workflow_run:
-    workflows: ['CI']
-    types:
-      - completed
 jobs:
   automerge:
     runs-on: ubuntu-latest
