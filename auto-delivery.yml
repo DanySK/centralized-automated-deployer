@@ -8,6 +8,7 @@ _all_repositories: &everything
 
 _java8+_repositories: &java8_repositories
   DanySK:
+    - listset
     - Template-for-Gradle-Plugins
     - upgradle
 
