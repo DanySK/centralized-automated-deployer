@@ -5,6 +5,7 @@ _all_repositories: &everything
   DanySK:
     - listset
     - Template-for-Gradle-Plugins
+    - Template-for-Kotlin-JVM-Projects
     - Thread-Inheritable-Resource-Loader-for-Java
     - upgradle
     - upgradle-bot
@@ -12,8 +13,9 @@ _all_repositories: &everything
 _java8+_repositories: &java8_repositories
   DanySK:
     - listset
-    - Thread-Inheritable-Resource-Loader-for-Java
+    - Template-for-Kotlin-JVM-Projects
     - Template-for-Gradle-Plugins
+    - Thread-Inheritable-Resource-Loader-for-Java
     - upgradle
 
 Automerge action:
