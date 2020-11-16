@@ -1,5 +1,7 @@
 # Entries whose name begin in _ get skipped and can be used for anchoring
 _all_repositories: &everything
+  AlchemistSimulator:
+    - Alchemist: develop
   DanySK:
     - listset
     - Template-for-Gradle-Plugins
