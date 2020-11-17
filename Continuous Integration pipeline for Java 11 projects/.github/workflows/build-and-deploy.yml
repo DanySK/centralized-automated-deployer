@@ -57,6 +57,7 @@ jobs:
             echo 'Detected custom deploy instructions'
             ./deploy.sh
           elif [ -x 'gradlew' ]
+          then
             echo 'Detected gradle wrapper, running ./gradlew publish --parallel (if available)'
             if ./gradlew tasks | grep publish
             then
