@@ -20,6 +20,8 @@ _automerge_repositories: &automerge_repositories
   DanySK:
     <<: *my_java8_repositories
     upgradle-bot:
+  Protelis:
+    Protelis-Demo:
 
 files:
   Automerge action:
