@@ -19,12 +19,14 @@ _my_java8+_repositories: &my_java8_repositories
   Thread-Inheritable-Resource-Loader-for-Java:
 
 _my_java11+_repositories: &my_java11_repositories
+  oop-reporting-machinery:
 
 _automerge_repositories: &automerge_repositories
   AlchemistSimulator:
     <<: *alchemist_repos
   DanySK:
     <<: *my_java8_repositories
+    <<: *my_java11_repositories
     upgradle-bot:
   Protelis:
     Protelis: develop
@@ -42,6 +44,10 @@ files:
     DanySK:
       *my_java8_repositories
 
+  Continuous Integration pipeline for Java 11 projects:
+    DanySK:
+      *my_java11_repositories
+
   deployment script for gradle plugins:
     DanySK:
       *my_gradle_plugins
@@ -49,6 +55,10 @@ files:
   Foreign pull request pipeline for Java 8 projects:
     DanySK:
       *my_java8_repositories
+
+  Foreign pull request pipeline for Java 11 projects:
+    DanySK:
+      *my_java11_repositories
 
 secrets:
   AUTOMERGE_TOKEN:
@@ -62,9 +72,12 @@ secrets:
   MAVEN_CENTRAL_PASSWORD:
     DanySK:
       <<: *my_java8_repositories
+      <<: *my_java11_repositories
   SIGNING_KEY:
     DanySK:
       <<: *my_java8_repositories
+      <<: *my_java11_repositories
   SIGNING_PASSWORD:
     DanySK:
       <<: *my_java8_repositories
+      <<: *my_java11_repositories
