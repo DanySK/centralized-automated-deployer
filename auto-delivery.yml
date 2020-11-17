@@ -1,9 +1,12 @@
 _alchemist_java_repositories: &alchemist_repos
   Alchemist: develop
 
-_my_java8+_repositories: &my_java8_repositories
-  listset:
+_my_gradle_plugins: &my_gradle_plugins
   Template-for-Gradle-Plugins:
+
+_my_java8+_repositories: &my_java8_repositories
+  <<: *my_gradle_plugins
+  listset:
   Template-for-Kotlin-JVM-Projects:
   Thread-Inheritable-Resource-Loader-for-Java:
   upgradle:
@@ -32,6 +35,18 @@ files:
 secrets:
   AUTOMERGE_TOKEN:
     *automerge_repositories
+  GRADLE_PUBLISH_KEY:
+    DanySK:
+      <<: *my_gradle_plugins
+  GRADLE_PUBLISH_SECRET:
+    DanySK:
+      <<: *my_gradle_plugins
   MAVEN_CENTRAL_PASSWORD:
+    DanySK:
+      <<: *my_java8_repositories
+  SIGNING_KEY:
+    DanySK:
+      <<: *my_java8_repositories
+  SIGNING_PASSWORD:
     DanySK:
       <<: *my_java8_repositories
