@@ -4,14 +4,18 @@ _alchemist_java_repositories: &alchemist_repos
 _my_gradle_plugins: &my_gradle_plugins
   Template-for-Gradle-Plugins:
 
-_my_java8+_repositories: &my_java8_repositories
+_my_kotlin_jvm_repositories: &my_kotlin_jvm_repositories
   <<: *my_gradle_plugins
   alchemist-intellij-plugin:
   khttp:
-  listset:
   Template-for-Kotlin-JVM-Projects:
-  Thread-Inheritable-Resource-Loader-for-Java:
   upgradle:
+
+_my_java8+_repositories: &my_java8_repositories
+  <<: *my_gradle_plugins
+  <<: *my_kotlin_jvm_repositories
+  listset:
+  Thread-Inheritable-Resource-Loader-for-Java:
 
 _my_java11+_repositories: &my_java11_repositories
 
@@ -26,6 +30,10 @@ _automerge_repositories: &automerge_repositories
     Protelis-Demo:
 
 files:
+  .editorconfig:
+    DanySK:
+      *my_kotlin_jvm_repositories
+
   Automerge action:
     *automerge_repositories
 
