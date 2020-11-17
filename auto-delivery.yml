@@ -21,6 +21,7 @@ _automerge_repositories: &automerge_repositories
     <<: *my_java8_repositories
     upgradle-bot:
   Protelis:
+    Protelis: develop
     Protelis-Demo:
 
 files:
