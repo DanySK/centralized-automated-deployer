@@ -43,7 +43,7 @@ jobs:
             exit 1
           fi
       - name: Deploy
-        if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 8 }}
+        if: ${{ matrix.os == 'ubuntu' && matrix.jvm_version == 11 }}
         shell: bash
         env:
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.SIGNING_KEY }}
@@ -59,7 +59,7 @@ jobs:
           elif [ -x 'gradlew' ]
           then
             echo 'Detected gradle wrapper, running ./gradlew publish --parallel'
-            ./gradlew publish --parallel
+            ./gradlew tasks | grep publish && ./gradlew publish --parallel
           elif [ -f 'pom.xml' ]
           then
             echo 'Detected Maven pom.xml, running mvn deploy'
