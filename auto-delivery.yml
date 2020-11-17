@@ -6,6 +6,7 @@ _my_gradle_plugins: &my_gradle_plugins
 
 _my_java8+_repositories: &my_java8_repositories
   <<: *my_gradle_plugins
+  alchemist-intellij-plugin:
   khttp:
   listset:
   Template-for-Kotlin-JVM-Projects:
