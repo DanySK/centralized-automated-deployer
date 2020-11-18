@@ -24,10 +24,6 @@ _my_java11+_repositories: &my_java11_repositories
 _automerge_repositories: &automerge_repositories
   AlchemistSimulator:
     <<: *alchemist_repos
-  DanySK:
-    <<: *my_java8_repositories
-    <<: *my_java11_repositories
-    upgradle-bot:
   Protelis:
     Protelis: develop
     Protelis-Demo:
