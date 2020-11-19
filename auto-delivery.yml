@@ -31,7 +31,7 @@ _automerge_repositories: &automerge_repositories
 files:
   .editorconfig:
     DanySK:
-      *my_kotlin_jvm_repositories
+      <<: *my_kotlin_jvm_repositories
       gradle-latex:
 
   Automerge action:
