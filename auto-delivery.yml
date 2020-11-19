@@ -3,6 +3,7 @@ _alchemist_java_repositories: &alchemist_repos
 
 _my_gradle_plugins: &my_gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
+  gradle-latex:
   Template-for-Gradle-Plugins:
 
 _my_kotlin_jvm_repositories: &my_kotlin_jvm_repositories
