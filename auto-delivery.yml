@@ -58,9 +58,14 @@ files:
     DanySK:
       *my_java11_repositories
 
+  Java multiplatform continuous integration pipeline:
+    AGCT-DSL:
+      AGCT: develop
+
 secrets:
   AUTOMERGE_TOKEN:
     <<: *automerge_repositories
+    AGCT-DSL: AGCT
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
