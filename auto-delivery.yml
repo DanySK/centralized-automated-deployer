@@ -64,6 +64,7 @@ secrets:
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
+      Course-Simulation-Basics:
       gradle-latex:
 
   GRADLE_PUBLISH_KEY:
