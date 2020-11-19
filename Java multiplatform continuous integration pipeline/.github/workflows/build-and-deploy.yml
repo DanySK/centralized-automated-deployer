@@ -18,12 +18,15 @@ jobs:
       # Checkout the repository
       - uses: actions/checkout@v2
       # Check if the configuration is supported
-      - shell: bash
+      - name: Prepare Environment
+        shell: bash
         run: |
           if [ -x .github/scripts/check_environment ]; then
             .github/scripts/check_environment
           else
+            echo "COMPATIBLE=true"
             echo "COMPATIBLE=true" >> $GITHUB_ENV
+            echo "SHOULD_DEPLOY=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')"
             echo "SHOULD_DEPLOY=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')" >> $GITHUB_ENV
           fi
       # Install the JDK
