@@ -71,20 +71,24 @@ secrets:
     DanySK:
       <<: *my_gradle_plugins
       gradle-latex:
+
   GRADLE_PUBLISH_SECRET:
     DanySK:
       <<: *my_gradle_plugins
       gradle-latex:
+
   MAVEN_CENTRAL_PASSWORD:
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
+
   SIGNING_KEY:
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
+
   SIGNING_PASSWORD:
     DanySK:
       <<: *my_java8_repositories
