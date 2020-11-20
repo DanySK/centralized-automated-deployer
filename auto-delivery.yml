@@ -1,6 +1,3 @@
-_alchemist_java_repositories: &alchemist_repos
-  Alchemist: develop
-
 _my_gradle_plugins: &my_gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
   Template-for-Gradle-Plugins:
@@ -22,8 +19,6 @@ _my_java11+_repositories: &my_java11_repositories
   oop-reporting-machinery:
 
 _automerge_repositories: &automerge_repositories
-  AlchemistSimulator:
-    <<: *alchemist_repos
   Protelis:
     Protelis: develop
     Protelis-Demo:
@@ -58,13 +53,17 @@ files:
     DanySK:
       *my_java11_repositories
 
-  Automerge on non-CI events:
+_java_multiplatform: &java_multiplatform
     AGCT-DSL:
       AGCT: develop
+    AlchemistSimulator:
+      Alchemist: drop-travis-ci
+
+  Automerge on non-CI events:
+    *_java_multiplatform
 
   Java multiplatform continuous integration pipeline:
-    AGCT-DSL:
-      AGCT: develop
+    *_java_multiplatform
 
 secrets:
   AUTOMERGE_TOKEN:
