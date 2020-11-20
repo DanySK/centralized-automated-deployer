@@ -23,6 +23,12 @@ _automerge_repositories: &automerge_repositories
     Protelis: develop
     Protelis-Demo:
 
+_java_multiplatform: &java_multiplatform
+    AGCT-DSL:
+      AGCT: develop
+    AlchemistSimulator:
+      Alchemist: drop-travis-ci
+
 files:
   .editorconfig:
     DanySK:
@@ -53,17 +59,11 @@ files:
     DanySK:
       *my_java11_repositories
 
-_java_multiplatform: &java_multiplatform
-    AGCT-DSL:
-      AGCT: develop
-    AlchemistSimulator:
-      Alchemist: drop-travis-ci
+  Automerge on non-CI events:
+    *java_multiplatform
 
-Automerge on non-CI events:
-  *java_multiplatform
-
-Java multiplatform continuous integration pipeline:
-  *java_multiplatform
+  Java multiplatform continuous integration pipeline:
+    *java_multiplatform
 
 secrets:
   AUTOMERGE_TOKEN:
