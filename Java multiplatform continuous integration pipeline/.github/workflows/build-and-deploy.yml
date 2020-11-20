@@ -17,6 +17,8 @@ jobs:
       TERM: dumb
     steps:
       # Checkout the repository
+      - name: Disable autocrlf
+        run: git config --global core.autocrlf false
       - name: Checkout
         uses: actions/checkout@v2
         with:
