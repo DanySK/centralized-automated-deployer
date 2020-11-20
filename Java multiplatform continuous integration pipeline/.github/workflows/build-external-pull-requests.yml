@@ -52,29 +52,10 @@ jobs:
             .github/scripts/configure_windows
           fi
       - name: Build
-        if: ${{ env.COMPATIBLE }}
+        if: ${{ env.COMPATIBLE == 'true' }}
         shell: bash 
-        run: |
-          if [ -x 'build.sh' ]; then
-            echo 'Detected custom build instructions'
-            ./build.sh
-          elif [ -x 'gradlew' ]; then
-            echo 'Detected gradle wrapper, checking for available tasks'
-            if ./gradlew tasks | grep '^check\s'; then
-              echo 'Detected check task'
-              ./gradlew check --parallel
-            elif ./gradlew tasks | grep '^build\s'; then
-              echo 'Detected build task'
-              ./gradlew build --parallel
-            else
-              echo 'No known tasks'
-              exit 1
-            fi
-          elif [ -f 'pom.xml' ]
-          then
-            echo 'Detected Maven pom.xml, running mvn install'
-            mvn install
-          else
-            echo 'No valid configuration detected, failing'
-            exit 1
-          fi
+        run: .github/build-steps/build.sh
+      - name: Check
+        if: ${{ env.COMPATIBLE == 'true' }}
+        shell: bash 
+        run: .github/build-steps/check.sh
