@@ -59,11 +59,11 @@ _java_multiplatform: &java_multiplatform
     AlchemistSimulator:
       Alchemist: drop-travis-ci
 
-  Automerge on non-CI events:
-    *_java_multiplatform
+Automerge on non-CI events:
+  *java_multiplatform
 
-  Java multiplatform continuous integration pipeline:
-    *_java_multiplatform
+Java multiplatform continuous integration pipeline:
+  *java_multiplatform
 
 secrets:
   AUTOMERGE_TOKEN:
