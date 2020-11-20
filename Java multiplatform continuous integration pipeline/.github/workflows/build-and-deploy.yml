@@ -42,8 +42,8 @@ jobs:
           else
             echo "COMPATIBLE=true"
             echo "COMPATIBLE=true" >> $GITHUB_ENV
-            echo "SHOULD_DEPLOY=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')"
-            echo "SHOULD_DEPLOY=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')" >> $GITHUB_ENV
+            echo "REFERENCE=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')"
+            echo "REFERENCE=$([ "$OS" = 'ubuntu' ] && [ "$JAVA_VERSION" = 8 ] && echo 'true' || echo 'false')" >> $GITHUB_ENV
           fi
       # Install the JDK
       - uses: joschi/setup-jdk@v2.3.0
