@@ -18,6 +18,11 @@ jobs:
       # Checkout the repository
       - uses: actions/checkout@v2
       # Check if the configuration is supported
+      # COMPATIBLE means the build can run on this matrix combination
+      # REFERENCE means this is the combination that produces the reference artifacts
+      # (hence, artifacts from REFERENCE configuration shall be deployed)
+      # Only one matrix entry should be REFERENCE=true
+      # If REFERENCE=true, then also COMPATIBLE=true
       - shell: bash
         run: |
           if [ -x .github/scripts/check_environment ]; then
