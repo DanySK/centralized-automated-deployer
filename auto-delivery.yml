@@ -69,6 +69,7 @@ secrets:
   AUTOMERGE_TOKEN:
     <<: *automerge_repositories
     AGCT-DSL: AGCT
+    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
@@ -81,30 +82,35 @@ secrets:
       gradle-latex:
 
   GRADLE_PUBLISH_SECRET:
+    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_gradle_plugins
       gradle-latex:
 
   MAVEN_CENTRAL_PASSWORD:
+    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
 
   SIGNING_KEY:
+    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
 
   SIGNING_PASSWORD:
+    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
+      
 
   SURGE_LOGIN:
-   AlchemistSimulator: Alchemist
+    AlchemistSimulator: Alchemist
 
   SURGE_TOKEN:
-   AlchemistSimulator: Alchemist
+    AlchemistSimulator: Alchemist
