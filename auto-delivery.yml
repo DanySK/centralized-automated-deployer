@@ -102,3 +102,9 @@ secrets:
       <<: *my_java8_repositories
       <<: *my_java11_repositories
       gradle-latex:
+
+  SURGE_LOGIN:
+   AlchemistSimulator: Alchemist
+
+  SURGE_TOKEN:
+   AlchemistSimulator: Alchemist
