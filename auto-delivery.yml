@@ -58,6 +58,10 @@ files:
     DanySK:
       *my_java11_repositories
 
+  Automerge on non-CI events:
+    AGCT-DSL:
+      AGCT: develop
+
   Java multiplatform continuous integration pipeline:
     AGCT-DSL:
       AGCT: develop
