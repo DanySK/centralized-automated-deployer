@@ -82,7 +82,6 @@ secrets:
       gradle-latex:
 
   GRADLE_PUBLISH_SECRET:
-    AlchemistSimulator: Alchemist
     DanySK:
       <<: *my_gradle_plugins
       gradle-latex:
