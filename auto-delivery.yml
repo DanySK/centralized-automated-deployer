@@ -19,6 +19,9 @@ _my_java11+_repositories: &my_java11_repositories
   oop-reporting-machinery:
 
 _automerge_repositories: &automerge_repositories
+  AlchemistSimulator:
+    Alchemist: develop
+    Protelis-Incarnation-tutorial:
   Protelis:
     Protelis: develop
     Protelis-Demo:
@@ -27,7 +30,8 @@ _java_multiplatform: &java_multiplatform
     AGCT-DSL:
       AGCT: develop
     AlchemistSimulator:
-      Alchemist: drop-travis-ci
+      Alchemist: develop
+      Protelis-Incarnation-tutorial:
 
 files:
   .editorconfig:
