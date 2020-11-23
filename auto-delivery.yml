@@ -4,11 +4,13 @@ _java_multiplatform: &java_multiplatform
   AlchemistSimulator:
     Alchemist: develop
     Protelis-Incarnation-tutorial:
+    SAPERE-incarnation-tutorial:
 
 _java11+: &java11_or_above
   AlchemistSimulator:
     Alchemist: develop
     Protelis-Incarnation-tutorial:
+    SAPERE-incarnation-tutorial:
 
 files:
   .editorconfig:
