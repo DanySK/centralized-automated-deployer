@@ -5,6 +5,8 @@ _java_multiplatform: &java_multiplatform
     Alchemist: develop
     Protelis-Incarnation-tutorial:
     SAPERE-incarnation-tutorial:
+  DanySK:
+    Aggregate-Computing-Backend:
 
 _java11+: &java11_or_above
   AlchemistSimulator:
