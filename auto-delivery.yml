@@ -1,6 +1,7 @@
 _alchemist_projects: &alchemist
   AlchemistSimulator:
     Alchemist: develop
+    alchemist-primer:
     Protelis-Incarnation-tutorial:
     SAPERE-incarnation-tutorial:
 
