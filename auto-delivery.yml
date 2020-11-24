@@ -13,6 +13,7 @@ _java_multiplatform: &java_multiplatform
     Aggregate-Computing-Backend:
     Aggregate-Computing-Client:
     Alchemist-experiments-startup:
+    alchemist-intellij-plugin:
 
 _java11+: &java11_or_above
   <<: *alchemist
