@@ -23,3 +23,5 @@ jobs:
         token: ${{ secrets.GH_TOKEN }}
         commit_author: Danilo Pianini
         author_email: danilo.pianini@gmail.com
+        labels: version-upgrade
+        colors: deffaa
