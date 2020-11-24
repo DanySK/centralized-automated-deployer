@@ -11,12 +11,12 @@ _java_multiplatform: &java_multiplatform
   DanySK:
     Aggregate-Computing-Backend:
     Aggregate-Computing-Client:
-    Alchemist-experiment-startup:
+    Alchemist-experiments-startup:
 
 _java11+: &java11_or_above
   <<: *alchemist
   DanySK:
-    Alchemist-experiment-startup:
+    Alchemist-experiments-startup:
 
 files:
   .editorconfig:
