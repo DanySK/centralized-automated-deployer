@@ -37,18 +37,21 @@ _automerge: &automerge
     <<: *my_java
     <<: *my_latex
 
-
 files:
   .editorconfig:
 
   Automerge on non-CI events:
     *automerge
 
+  Compatibility check for Java 11 projects:
+    *java11_or_above
+
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
 
-  Compatibility check for Java 11 projects:
-    *java11_or_above
+  LaTeX build and delivery:
+    DanySK:
+      *my_latex
 
 secrets:
   AUTOMERGE_TOKEN:
