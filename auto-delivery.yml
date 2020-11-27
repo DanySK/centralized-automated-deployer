@@ -20,7 +20,8 @@ _java_multiplatform: &java_multiplatform
   AlchemistSimulator:
     *alchemist
   DanySK:
-    *my_java
+    <<: *my_java
+    Course-DevOps-Introduction:
 
 _java11+: &java11_or_above
   AlchemistSimulator:
