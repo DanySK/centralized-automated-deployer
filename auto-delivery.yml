@@ -28,6 +28,7 @@ _java11+: &java11_or_above
     *alchemist
   DanySK:
     Alchemist-experiments-startup:
+    Course-DevOps-Introduction:
 
 _automerge: &automerge
   AGCT-DSL:
