@@ -28,7 +28,11 @@ jobs:
         run: |
           TAG=$(git describe --tags --exact-match HEAD)
           hub release create -m "$(git tag -l --format='%(contents)' "$TAG")" "$TAG" || true
-          hub release edit -m '' -a "CI.pdf" "$TAG"
+          while IFS= read -r file; do
+            pdf="${file%.*}.pdf"
+            echo "Delivering file $pdf"
+            hub release edit -m '' -a "$pdf" "$TAG"
+          done <"success-list"
   Automerge:
     needs: Build-LaTeX
     runs-on: ubuntu-latest
