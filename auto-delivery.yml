@@ -1,31 +1,48 @@
 _alchemist_projects: &alchemist
-  AlchemistSimulator:
-    Alchemist: develop
-    alchemist-primer:
-    Protelis-Incarnation-tutorial:
-    SAPERE-incarnation-tutorial:
+  Alchemist: develop
+  alchemist-primer:
+  Protelis-Incarnation-tutorial:
+  SAPERE-incarnation-tutorial:
+
+_my_latex: &my_latex
+  Course-DevOps-Introduction:
+
+_my_java: &my_java
+  Aggregate-Computing-Backend:
+  Aggregate-Computing-Client:
+  Alchemist-experiments-startup:
+  alchemist-intellij-plugin:
+  boilerplate:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
     AGCT: develop
-  <<: *alchemist
+  AlchemistSimulator:
+    *alchemist
   DanySK:
-    Aggregate-Computing-Backend:
-    Aggregate-Computing-Client:
-    Alchemist-experiments-startup:
-    alchemist-intellij-plugin:
-    boilerplate:
+    *my_java
 
 _java11+: &java11_or_above
-  <<: *alchemist
+  AlchemistSimulator:
+    *alchemist
   DanySK:
     Alchemist-experiments-startup:
+
+_automerge: &automerge
+  AGCT-DSL:
+    AGCT: develop
+  AlchemistSimulator:
+    *alchemist
+  DanySK:
+    <<: *my_java
+    <<: *my_latex
+
 
 files:
   .editorconfig:
 
   Automerge on non-CI events:
-    *java_multiplatform
+    *automerge
 
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
@@ -35,7 +52,7 @@ files:
 
 secrets:
   AUTOMERGE_TOKEN:
-    *java_multiplatform
+    *automerge
 
   GRADLE_PUBLISH_KEY:
 
