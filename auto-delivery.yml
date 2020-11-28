@@ -5,6 +5,7 @@ _alchemist_projects: &alchemist
   SAPERE-incarnation-tutorial:
 
 _my_latex: &my_latex
+  Course-DevOps-for-scientific-research:
   Course-DevOps-Introduction:
 
 _my_java: &my_java
