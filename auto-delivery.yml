@@ -15,6 +15,7 @@ _my_java: &my_java
   alchemist-intellij-plugin:
   boilerplate:
   conrec:
+  Course-DevOps-for-scientific-research:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
