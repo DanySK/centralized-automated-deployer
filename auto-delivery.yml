@@ -41,6 +41,7 @@ _automerge: &automerge
   DanySK:
     <<: *my_java
     <<: *my_latex
+    Course-Laboratory-of-Software-Systems:
 
 files:
   .editorconfig:
