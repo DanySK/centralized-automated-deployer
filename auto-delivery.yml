@@ -8,6 +8,7 @@ _my_latex: &my_latex
   Course-DevOps-for-scientific-research:
   Course-DevOps-Introduction:
   Course-Simulation-Basics:
+  Curriculum-Vitae:
 
 _my_java: &my_java
   Aggregate-Computing-Backend:
