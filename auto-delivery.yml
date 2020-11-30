@@ -7,6 +7,7 @@ _alchemist_projects: &alchemist
 _my_latex: &my_latex
   Course-DevOps-for-scientific-research:
   Course-DevOps-Introduction:
+  Course-Simulation-Basics:
 
 _my_java: &my_java
   Aggregate-Computing-Backend:
