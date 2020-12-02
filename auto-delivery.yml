@@ -18,6 +18,7 @@ _my_java: &my_java
   boilerplate:
   conrec:
   Course-DevOps-for-scientific-research:
+  git-sensitive-semantic-versioning-gradle-plugin:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
