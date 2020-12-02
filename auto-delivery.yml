@@ -35,6 +35,9 @@ _java11+: &java11_or_above
     Alchemist-experiments-startup:
     Course-DevOps-Introduction:
 
+_my_docker_linux: &docker_linux
+  docker-linux-didattica:
+
 _automerge: &automerge
   AGCT-DSL:
     AGCT: develop
@@ -54,6 +57,10 @@ files:
   Compatibility check for Java 11 projects:
     *java11_or_above
 
+  Docker Linux build and deploy:
+    DanySK:
+      *docker_linux
+
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
 
@@ -64,6 +71,10 @@ files:
 secrets:
   AUTOMERGE_TOKEN:
     *automerge
+
+  DOCKER_PASSWORD:
+    DanySK:
+      *docker_linux
 
   GRADLE_PUBLISH_KEY:
 
