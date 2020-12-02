@@ -10,7 +10,11 @@ _my_latex: &my_latex
   Course-Simulation-Basics:
   Curriculum-Vitae:
 
+_gradle_plugins: &gradle_plugins
+  git-sensitive-semantic-versioning-gradle-plugin:
+
 _my_java: &my_java
+  <<: *gradle_plugins
   Aggregate-Computing-Backend:
   Aggregate-Computing-Client:
   Alchemist-experiments-startup:
@@ -18,7 +22,6 @@ _my_java: &my_java
   boilerplate:
   conrec:
   Course-DevOps-for-scientific-research:
-  git-sensitive-semantic-versioning-gradle-plugin:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -57,6 +60,10 @@ files:
 
   Automerge on non-CI events:
     *automerge
+
+  Build instructions for Gradle Plugins:
+    DanySK:
+      *gradle_plugins
 
   Compatibility check for Java 11 projects:
     *java11_or_above
