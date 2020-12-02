@@ -39,6 +39,7 @@ _my_docker_linux: &docker_linux
   docker-linux-didattica:
   docker-manjaro-linux-with-yay:
   docker-manjaro-programming-cli-tools:
+  docker-manjaro-with-zsh:
 
 _automerge: &automerge
   AGCT-DSL:
