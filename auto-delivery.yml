@@ -38,6 +38,7 @@ _java11+: &java11_or_above
 _my_docker_linux: &docker_linux
   docker-linux-didattica:
   docker-manjaro-linux-with-yay:
+  docker-manjaro-programming-cli-tools:
 
 _automerge: &automerge
   AGCT-DSL:
