@@ -88,8 +88,12 @@ secrets:
       *docker_linux
 
   GRADLE_PUBLISH_KEY:
+    DanySK:
+      *gradle_plugins
 
   GRADLE_PUBLISH_SECRET:
+    DanySK:
+      *gradle_plugins
 
   MAVEN_CENTRAL_PASSWORD:
     *java_multiplatform
