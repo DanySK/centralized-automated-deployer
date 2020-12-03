@@ -51,6 +51,9 @@ _java8-linux-only: &java8_linux
     gradle-latex:
     graphstream:
 
+_my_jekyll: &my_jekyll
+  jekyll-freelancer-theme:
+
 _my_docker_linux: &docker_linux
   docker-linux-didattica:
   docker-manjaro-linux-with-yay:
@@ -106,11 +109,16 @@ files:
       <<: *my_java
       <<: *my_latex
       <<: *docker_linux
+      <<: *my_jekyll
       Course-Laboratory-of-Software-Systems:
       Gradle-Wrapper:
 
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
+
+  Jekyllrb site build:
+    DanySK:
+      *my_jekyll
 
   LaTeX build and delivery:
     DanySK:
