@@ -24,6 +24,7 @@ _my_java: &my_java
   conrec:
   Course-DevOps-for-scientific-research:
   graphstream:
+  graphstream-gs-algo:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
