@@ -25,6 +25,7 @@ _my_java: &my_java
   Course-DevOps-for-scientific-research:
   graphstream:
   graphstream-gs-algo:
+  graphstream-gs-core:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -56,6 +57,7 @@ _my_docker_linux: &docker_linux
 _no_deployment: &no_deployment
   DanySK:
     graphstream-gs-algo:
+    graphstream-gs-core:
 
 _automerge: &automerge
   AGCT-DSL:
