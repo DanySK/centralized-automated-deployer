@@ -29,6 +29,7 @@ _my_java: &my_java
   graphstream-gs-ui-swing:
   gson-extras:
   java-quadtree:
+  jirf:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -45,6 +46,7 @@ _java11+: &java11_or_above
   DanySK:
     Alchemist-experiments-startup:
     Course-DevOps-Introduction:
+    jirf:
 
 _java8-linux-only: &java8_linux
   DanySK:
