@@ -30,6 +30,7 @@ _my_java: &my_java
   gson-extras:
   java-quadtree:
   jirf:
+  khttp:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
