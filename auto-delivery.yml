@@ -74,6 +74,8 @@ _automerge: &automerge
   DanySK:
     <<: *my_java
     <<: *my_latex
+    <<: *docker_linux
+    <<: *my_jekyll
     Course-Laboratory-of-Software-Systems:
     Gradle-Wrapper:
 
