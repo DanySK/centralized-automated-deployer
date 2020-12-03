@@ -75,8 +75,6 @@ _automerge: &automerge
     Gradle-Wrapper:
 
 files:
-  .editorconfig:
-
   Automerge on non-CI events:
     *automerge
 
@@ -96,6 +94,20 @@ files:
   Docker Linux build and deploy:
     DanySK:
       *docker_linux
+
+  editor config:
+
+  git attributes:
+    AGCT-DSL:
+      AGCT: develop
+    AlchemistSimulator:
+      *alchemist
+    DanySK:
+      <<: *my_java
+      <<: *my_latex
+      <<: *docker_linux
+      Course-Laboratory-of-Software-Systems:
+      Gradle-Wrapper:
 
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
