@@ -27,6 +27,7 @@ _my_java: &my_java
   graphstream-gs-algo:
   graphstream-gs-core:
   graphstream-gs-ui-swing:
+  gson-extras:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
