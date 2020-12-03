@@ -26,6 +26,7 @@ _my_java: &my_java
   graphstream:
   graphstream-gs-algo:
   graphstream-gs-core:
+  graphstream-gs-ui-swing:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -58,6 +59,7 @@ _no_deployment: &no_deployment
   DanySK:
     graphstream-gs-algo:
     graphstream-gs-core:
+    graphstream-gs-ui-swing:
 
 _automerge: &automerge
   AGCT-DSL:
