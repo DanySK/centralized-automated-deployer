@@ -31,6 +31,7 @@ _my_java: &my_java
   java-quadtree:
   jirf:
   khttp:
+  listset:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
