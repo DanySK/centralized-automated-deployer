@@ -53,6 +53,10 @@ _my_docker_linux: &docker_linux
   docker-manjaro-programming-cli-tools:
   docker-manjaro-with-zsh:
 
+_no_deployment: &no_deployment
+  DanySK:
+    graphstream-gs-algo:
+
 _automerge: &automerge
   AGCT-DSL:
     AGCT: develop
@@ -79,6 +83,9 @@ files:
 
   Compatibility check for Linux-only Java 8 projects:
     *java8_linux
+
+  Disable deployment script:
+    *no_deployment
 
   Docker Linux build and deploy:
     DanySK:
