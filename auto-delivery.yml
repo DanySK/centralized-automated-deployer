@@ -56,6 +56,7 @@ _java8-linux-only: &java8_linux
 
 _my_jekyll: &my_jekyll
   jekyll-freelancer-theme:
+  libri-antichi:
 
 _my_docker_linux: &docker_linux
   docker-linux-didattica:
