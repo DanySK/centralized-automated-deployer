@@ -23,6 +23,7 @@ _my_java: &my_java
   boilerplate:
   conrec:
   Course-DevOps-for-scientific-research:
+  graphstream:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -39,6 +40,11 @@ _java11+: &java11_or_above
   DanySK:
     Alchemist-experiments-startup:
     Course-DevOps-Introduction:
+
+_java8-linux-only: &java8_linux
+  DanySK:
+    gradle-latex:
+    graphstream:
 
 _my_docker_linux: &docker_linux
   docker-linux-didattica:
@@ -69,6 +75,9 @@ files:
 
   Compatibility check for Java 11 projects:
     *java11_or_above
+
+  Compatibility check for Linux-only Java 8 projects:
+    *java8_linux
 
   Docker Linux build and deploy:
     DanySK:
