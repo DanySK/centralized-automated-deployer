@@ -16,6 +16,13 @@ _my_latex: &my_latex
   Template-ACM-Article:
   Template-Elsevier-Article:
   Template-Elsevier-CAS-DC:
+  Template-IEEE-Computer-Society-Magazines:
+  Template-IEEE-Conference-Proceedings:
+  Template-LaTeX-achemso:
+  Template-LaTeX-CI:
+  Template-LaTeX-ERC:
+  Template-LaTeX-LMCS:
+  Template-LaTeX-MDPI:
 
 _gradle_plugins: &gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
@@ -45,6 +52,10 @@ _my_java: &my_java
   oop-reporting-machinery:
   OrchidForScience:
   sportstracker:
+  Template-for-Kotlin-Gradle-Projects:
+  Template-for-Kotlin-JVM-Projects:
+  Thread-Inheritable-Resource-Loader-for-Java:
+  upgradle:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
@@ -54,6 +65,11 @@ _java_multiplatform: &java_multiplatform
   DanySK:
     <<: *my_java
     Course-DevOps-Introduction:
+  Protelis:
+    Protelis: develop
+    Protelis-Demo:
+    Protelis-KDoc-generator:
+    Protelis-Parser:
 
 _java11+: &java11_or_above
   AlchemistSimulator:
@@ -73,6 +89,8 @@ _java8-linux-only: &java8_linux
 _my_jekyll: &my_jekyll
   jekyll-freelancer-theme:
   libri-antichi:
+  Template-Jekyll-Cayman:
+  Template-Jekyll-Vitae:
 
 _my_docker_linux: &docker_linux
   docker-linux-didattica:
@@ -107,6 +125,8 @@ files:
   Build instructions for Gradle Plugins:
     DanySK:
       *gradle_plugins
+    Protelis:
+      Protelis-KDoc-generator:
 
   Compatibility check for Java 11 projects:
     *java11_or_above
@@ -142,10 +162,15 @@ files:
   Jekyllrb site build:
     DanySK:
       *my_jekyll
+    Fluidware-Project:
+      fluidware-project.github.io:
 
   LaTeX build and delivery:
     DanySK:
       *my_latex
+    gciatto-unibo:
+      alchemist-softwareX-2020:
+      thesis-template:
 
 secrets:
   AUTOMERGE_TOKEN:
