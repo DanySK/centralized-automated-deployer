@@ -160,6 +160,8 @@ files:
       <<: *my_jekyll
       Course-Laboratory-of-Software-Systems:
       Gradle-Wrapper:
+    Protelis:
+      *protelis
 
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
