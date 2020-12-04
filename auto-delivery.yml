@@ -39,6 +39,8 @@ _my_java: &my_java
   maven-central-gradle-plugin:
   oop-reporting-machinery:
   OrchidForScience:
+  refreshversions-aliases:
+  sportstracker:
 
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
