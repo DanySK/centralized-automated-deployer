@@ -4,6 +4,12 @@ _alchemist_projects: &alchemist
   Protelis-Incarnation-tutorial:
   SAPERE-incarnation-tutorial:
 
+_protelis_projects: &protelis
+  Protelis: develop
+  Protelis-Demo:
+  Protelis-KDoc-generator: develop
+  Protelis-Parser: develop
+
 _my_latex: &my_latex
   Course-DevOps-for-scientific-research:
   Course-DevOps-Introduction:
@@ -66,10 +72,7 @@ _java_multiplatform: &java_multiplatform
     <<: *my_java
     Course-DevOps-Introduction:
   Protelis:
-    Protelis: develop
-    Protelis-Demo:
-    Protelis-KDoc-generator: develop
-    Protelis-Parser: develop
+    *protelis
 
 _java11+: &java11_or_above
   AlchemistSimulator:
@@ -117,6 +120,8 @@ _automerge: &automerge
     <<: *my_jekyll
     Course-Laboratory-of-Software-Systems:
     Gradle-Wrapper:
+  Protelis:
+    *protelis
 
 files:
   Automerge on non-CI events:
