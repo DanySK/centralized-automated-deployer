@@ -68,8 +68,8 @@ _java_multiplatform: &java_multiplatform
   Protelis:
     Protelis: develop
     Protelis-Demo:
-    Protelis-KDoc-generator:
-    Protelis-Parser:
+    Protelis-KDoc-generator: develop
+    Protelis-Parser: develop
 
 _java11+: &java11_or_above
   AlchemistSimulator:
@@ -126,7 +126,7 @@ files:
     DanySK:
       *gradle_plugins
     Protelis:
-      Protelis-KDoc-generator:
+      Protelis-KDoc-generator: develop
 
   Compatibility check for Java 11 projects:
     *java11_or_above
