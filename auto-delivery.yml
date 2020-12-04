@@ -13,10 +13,14 @@ _my_latex: &my_latex
   Paper-2019-IEEE-Software-Protelis:
   Paper-2019-PMC-SmartCam:
   Paper-2020-LMCS-TimeFluid:
+  Template-ACM-Article:
+  Template-Elsevier-Article:
+  Template-Elsevier-CAS-DC:
 
 _gradle_plugins: &gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
   gradle-latex:
+  refreshversions-aliases:
 
 _my_java: &my_java
   <<: *gradle_plugins
@@ -59,6 +63,7 @@ _java11+: &java11_or_above
     Course-DevOps-Introduction:
     jirf:
     oop-reporting-machinery:
+    sportstracker:
 
 _java8-linux-only: &java8_linux
   DanySK:
