@@ -21,6 +21,7 @@ _gradle_plugins: &gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
   gradle-latex:
   refreshversions-aliases:
+  Template-for-Gradle-Plugins:
 
 _my_java: &my_java
   <<: *gradle_plugins
@@ -43,7 +44,6 @@ _my_java: &my_java
   maven-central-gradle-plugin:
   oop-reporting-machinery:
   OrchidForScience:
-  refreshversions-aliases:
   sportstracker:
 
 _java_multiplatform: &java_multiplatform
