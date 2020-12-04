@@ -202,7 +202,7 @@ secrets:
     *java_multiplatform
 
   SIGNING_PASSWORD:
-    *java_multiplatform      
+    *java_multiplatform
 
   SURGE_LOGIN:
     AlchemistSimulator: Alchemist
