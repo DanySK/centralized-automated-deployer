@@ -206,6 +206,8 @@ secrets:
 
   SURGE_LOGIN:
     AlchemistSimulator: Alchemist
+    Protelis: Protelis
 
   SURGE_TOKEN:
     AlchemistSimulator: Alchemist
+    Protelis: Protelis
