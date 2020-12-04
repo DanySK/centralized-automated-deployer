@@ -120,6 +120,8 @@ _automerge: &automerge
     <<: *my_jekyll
     Course-Laboratory-of-Software-Systems:
     Gradle-Wrapper:
+  Fluidware-Project:
+    fluidware-project.github.io:
   Protelis:
     *protelis
 
