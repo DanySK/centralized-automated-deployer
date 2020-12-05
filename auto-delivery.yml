@@ -33,6 +33,7 @@ _my_latex: &my_latex
 _gradle_plugins: &gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
   gradle-latex:
+  maven-central-gradle-plugin:
   refreshversions-aliases:
   Template-for-Gradle-Plugins:
 
