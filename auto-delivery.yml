@@ -114,6 +114,8 @@ _automerge: &automerge
     AGCT: develop
   AlchemistSimulator:
     *alchemist
+  APICE-at-DISI:
+    OOP-Lab:
   DanySK:
     <<: *my_java
     <<: *my_latex
