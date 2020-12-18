@@ -114,8 +114,6 @@ _automerge: &automerge
     AGCT: develop
   AlchemistSimulator:
     *alchemist
-  APICE-at-DISI:
-    OOP-Lab:
   DanySK:
     <<: *my_java
     <<: *my_latex
@@ -178,8 +176,6 @@ files:
       fluidware-project.github.io:
 
   LaTeX build and delivery:
-    APICE-at-DISI:
-      OOP-Lab:
     DanySK:
       *my_latex
     gciatto-unibo:
