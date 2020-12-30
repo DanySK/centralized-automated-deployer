@@ -13,10 +13,9 @@ jobs:
       # Checkout the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Bundler
-        run: sudo gem install bundler
-      - name: Run bundle install
-        run: bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build Jekyll site
         run: bundle exec jekyll build
   Automerge:
