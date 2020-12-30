@@ -91,6 +91,7 @@ _java8-linux-only: &java8_linux
     graphstream:
 
 _my_jekyll: &my_jekyll
+  danysk.github.io:
   jekyll-freelancer-theme:
   libri-antichi:
   Template-Jekyll-Cayman:
