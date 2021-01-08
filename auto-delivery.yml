@@ -44,6 +44,7 @@ _my_java: &my_java
   Alchemist-experiments-startup:
   alchemist-intellij-plugin:
   boilerplate:
+  compute-my-taxes:
   conrec:
   Course-DevOps-for-scientific-research:
   graphstream:
