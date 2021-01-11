@@ -28,6 +28,7 @@ _my_latex: &my_latex
   Template-LaTeX-CI:
   Template-LaTeX-ERC:
   Template-LaTeX-LMCS:
+  Template-LaTeX-LNCS:
   Template-LaTeX-MDPI:
 
 _gradle_plugins: &gradle_plugins
