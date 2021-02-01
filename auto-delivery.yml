@@ -64,6 +64,7 @@ _my_java: &my_java
   Template-for-Kotlin-Gradle-Projects:
   Template-for-Kotlin-JVM-Projects:
   Thread-Inheritable-Resource-Loader-for-Java:
+  tornadofx2:
   upgradle:
 
 _java_multiplatform: &java_multiplatform
