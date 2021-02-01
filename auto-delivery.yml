@@ -177,7 +177,6 @@ files:
     DanySK:
       *my_latex
     gciatto-unibo:
-      alchemist-softwareX-2020:
       thesis-template:
 
 secrets:
