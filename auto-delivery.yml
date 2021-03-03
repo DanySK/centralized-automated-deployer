@@ -80,6 +80,11 @@ _java_multiplatform: &java_multiplatform
 _java11+: &java11_or_above
   AlchemistSimulator:
     *alchemist
+  APICe-at-DISI:
+    sample-javafx-project:
+    sample-gradle-project:
+      - master
+      - lesson
   DanySK:
     Alchemist-experiments-startup:
     Course-DevOps-Introduction:
