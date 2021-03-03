@@ -128,6 +128,11 @@ _automerge: &automerge
     AGCT: develop
   AlchemistSimulator:
     *alchemist
+  APICe-at-DISI:
+    sample-javafx-project:
+    sample-gradle-project:
+      - master
+      - lesson
   DanySK:
     <<: *my_java
     <<: *my_latex
