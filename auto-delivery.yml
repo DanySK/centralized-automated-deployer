@@ -69,6 +69,11 @@ _my_java: &my_java
 _java_multiplatform: &java_multiplatform
   AGCT-DSL:
     AGCT: develop
+  APICe-at-DISI:
+    sample-javafx-project:
+    sample-gradle-project:
+      - master
+      - lesson
   AlchemistSimulator:
     *alchemist
   DanySK:
