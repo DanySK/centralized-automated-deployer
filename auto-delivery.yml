@@ -87,6 +87,7 @@ _java11+: &java11_or_above
   AlchemistSimulator:
     *alchemist
   APICe-at-DISI:
+    PPS-ci-examples:
     sample-javafx-project:
     sample-gradle-project:
       - master
