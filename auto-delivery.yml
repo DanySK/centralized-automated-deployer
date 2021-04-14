@@ -70,6 +70,8 @@ _java_multiplatform: &java_multiplatform
   AGCT-DSL:
     AGCT: develop
   APICe-at-DISI:
+    PPS-ci-examples:
+    pps-ci-lab:
     sample-javafx-project:
     sample-gradle-project:
       - master
@@ -169,6 +171,13 @@ files:
       AGCT: develop
     AlchemistSimulator:
       *alchemist
+    APICe-at-DISI:
+      PPS-ci-examples:
+      pps-ci-lab:
+      sample-javafx-project:
+      sample-gradle-project:
+        - master
+        - lesson
     DanySK:
       <<: *my_java
       <<: *my_latex
