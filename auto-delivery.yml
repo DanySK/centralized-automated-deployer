@@ -71,7 +71,6 @@ _java_multiplatform: &java_multiplatform
     AGCT: develop
   APICe-at-DISI:
     PPS-ci-examples:
-    pps-ci-lab:
     sample-javafx-project:
     sample-gradle-project:
       - master
