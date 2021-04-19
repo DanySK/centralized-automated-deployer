@@ -15,8 +15,10 @@ _my_latex: &my_latex
   Course-DevOps-Introduction:
   Course-Simulation-Basics:
   Curriculum-Vitae:
+  Paper-2019-Coordination-Share-FastRep:
   Paper-2019-Genetic-network-dsl:
   Paper-2019-IEEE-Software-Protelis:
+  Paper-2019-LMCS-Share-FastRep:
   Paper-2019-PMC-SmartCam:
   Paper-2020-LMCS-TimeFluid:
   Template-ACM-Article:
