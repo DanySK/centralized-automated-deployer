@@ -208,6 +208,16 @@ files:
       *my_latex
     gciatto-unibo:
       thesis-template:
+    metaphori:
+      paper-2021-coordination-scafiweb:
+
+  LaTeX diff:
+    DanySK:
+      *my_latex
+    gciatto-unibo:
+      thesis-template:
+    metaphori:
+      paper-2021-coordination-scafiweb:
 
 secrets:
   AUTOMERGE_TOKEN:
