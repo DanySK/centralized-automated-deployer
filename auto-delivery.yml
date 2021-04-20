@@ -115,6 +115,7 @@ _my_jekyll: &my_jekyll
   Template-Jekyll-Vitae: gh-pages
 
 _my_docker_linux: &docker_linux
+  auto-latexdiff:
   docker-linux-didattica:
   docker-manjaro-linux-with-yay:
   docker-manjaro-programming-cli-tools:
