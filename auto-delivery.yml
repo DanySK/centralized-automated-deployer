@@ -119,6 +119,7 @@ _my_docker_linux: &docker_linux
   docker-manjaro-linux-with-yay:
   docker-manjaro-programming-cli-tools:
   docker-manjaro-with-zsh:
+  yaagha:
 
 _no_deployment: &no_deployment
   DanySK:
