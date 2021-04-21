@@ -191,6 +191,11 @@ files:
       <<: *my_jekyll
       Course-Laboratory-of-Software-Systems:
       Gradle-Wrapper:
+    gciatto-unibo:
+      thesis-template:
+    metaphori:
+      paper-2021-coordination-scafiweb:
+      paper-2021-jcee-optc:
     Protelis:
       *protelis
 
@@ -210,6 +215,7 @@ files:
       thesis-template:
     metaphori:
       paper-2021-coordination-scafiweb:
+      paper-2021-jcee-optc:
 
   LaTeX diff:
     DanySK:
@@ -218,6 +224,7 @@ files:
       thesis-template:
     metaphori:
       paper-2021-coordination-scafiweb:
+      paper-2021-jcee-optc:
 
 secrets:
   AUTOMERGE_TOKEN:
