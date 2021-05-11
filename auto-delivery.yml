@@ -49,6 +49,7 @@ _my_java: &my_java
   compute-my-taxes:
   conrec:
   Course-DevOps-for-scientific-research:
+  DisCoTec-2021-Tutorial:
   graphstream:
   graphstream-gs-algo:
   graphstream-gs-core:
