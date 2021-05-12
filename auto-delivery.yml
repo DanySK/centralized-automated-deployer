@@ -81,7 +81,6 @@ _java_multiplatform: &java_multiplatform
     *alchemist
   DanySK:
     <<: *my_java
-    Course-DevOps-Introduction:
   Protelis:
     *protelis
 
