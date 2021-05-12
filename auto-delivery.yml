@@ -95,7 +95,6 @@ _java11+: &java11_or_above
       - lesson
   DanySK:
     Alchemist-experiments-startup:
-    Course-DevOps-Introduction:
     jirf:
     oop-reporting-machinery:
     sportstracker:
