@@ -48,6 +48,7 @@ _my_java: &my_java
   boilerplate:
   compute-my-taxes:
   conrec:
+  Course-2021-Impresoft-Java-Concurrency:
   Course-DevOps-for-scientific-research:
   DisCoTec-2021-Tutorial:
   graphstream:
