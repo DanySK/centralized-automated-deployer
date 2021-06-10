@@ -11,7 +11,6 @@ _protelis_projects: &protelis
   Protelis-Parser: develop
 
 _my_latex: &my_latex
-  Course-DevOps-for-scientific-research:
   Course-Simulation-Basics:
   Curriculum-Vitae:
   Paper-2019-Coordination-Share-FastRep:
@@ -49,7 +48,6 @@ _my_java: &my_java
   compute-my-taxes:
   conrec:
   Course-2021-Impresoft-Java-Concurrency:
-  Course-DevOps-for-scientific-research:
   DisCoTec-2021-Tutorial:
   graphstream:
   graphstream-gs-algo:
