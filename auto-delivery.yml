@@ -144,6 +144,7 @@ _automerge: &automerge
     <<: *my_latex
     <<: *docker_linux
     <<: *my_jekyll
+    Course-2021-Impresoft-Java-Concurrency:
     Course-Laboratory-of-Software-Systems:
     Gradle-Wrapper:
   Fluidware-Project:
