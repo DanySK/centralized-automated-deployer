@@ -227,7 +227,6 @@ files:
     DanySK:
       <<: *gradle_plugins
       conrec:
-      maven-central-gradle-plugin:
       OrchidForScience:
       Template-for-Kotlin-Gradle-Projects:
       Template-for-Kotlin-JVM-Projects:
