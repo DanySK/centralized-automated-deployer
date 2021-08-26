@@ -36,8 +36,15 @@ _gradle_plugins: &gradle_plugins
   gradle-latex:
   maven-central-gradle-plugin:
   refreshversions-aliases:
-  Template-for-Gradle-Plugins:
 
+_gradle_plugins_multi_os: &gradle_plugins_multi_os
+  DanySK:
+    Template-for-Gradle-Plugins:
+  
+
+_java_multi_os: &java_multi_os
+  <<: *gradle_plugins_multi_os
+  
 _my_java: &my_java
   <<: *gradle_plugins
   Aggregate-Computing-Backend:
@@ -213,6 +220,9 @@ files:
     Protelis:
       *protelis
 
+  Gradle multi-OS build:
+    <<: java_multi_os
+
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
 
@@ -265,21 +275,26 @@ secrets:
       *docker_linux
 
   GRADLE_PUBLISH_KEY:
-    DanySK:
-      *gradle_plugins
+    - DanySK:
+        *gradle_plugins
+    - *gradle_plugins_multi_os
 
   GRADLE_PUBLISH_SECRET:
-    DanySK:
-      *gradle_plugins
+    - DanySK:
+        *gradle_plugins
+    - *gradle_plugins_multi_os
 
   MAVEN_CENTRAL_PASSWORD:
-    *java_multiplatform
+    - *java_multiplatform
+    - *java_multi_os
 
   SIGNING_KEY:
-    *java_multiplatform
+    - *java_multiplatform
+    - *java_multi_os
 
   SIGNING_PASSWORD:
-    *java_multiplatform
+    - *java_multiplatform
+    - *java_multi_os
 
   SURGE_LOGIN:
     AlchemistSimulator: Alchemist
