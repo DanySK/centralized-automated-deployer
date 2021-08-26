@@ -56,6 +56,7 @@ _my_java: &my_java
   listset:
   oop-reporting-machinery:
   OrchidForScience:
+  Test-Gradle-Version-Catalogs:
   Template-for-Kotlin-Gradle-Projects:
   Template-for-Kotlin-JVM-Projects:
   Thread-Inheritable-Resource-Loader-for-Java:
