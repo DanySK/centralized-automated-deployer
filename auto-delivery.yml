@@ -187,10 +187,6 @@ files:
   Disable deployment script:
     *no_deployment
 
-  Docker Linux build and deploy:
-    DanySK:
-      *docker_linux
-
   editor config:
 
   git attributes:
