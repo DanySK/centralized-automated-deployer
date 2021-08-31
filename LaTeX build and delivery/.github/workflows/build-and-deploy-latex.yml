@@ -1,8 +1,6 @@
 name: Build LaTeX and deploy on GitHub Releases
 on:
   push:
-  schedule:
-    - cron: '0 0 1 * *'
 
 jobs:
   Build-LaTeX:
