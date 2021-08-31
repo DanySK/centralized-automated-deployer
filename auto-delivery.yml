@@ -216,8 +216,8 @@ files:
     Protelis:
       *protelis
 
-  Gradle multi-OS build:
-    <<: *java_multi_os
+  #Gradle multi-OS build:
+    #<<: *java_multi_os
 
   Java multiplatform continuous integration pipeline:
     *java_multiplatform
