@@ -13,12 +13,6 @@ _protelis_projects: &protelis
 _my_latex: &my_latex
   Course-Simulation-Basics:
   Curriculum-Vitae:
-  Paper-2019-Coordination-Share-FastRep:
-  Paper-2019-Genetic-network-dsl:
-  Paper-2019-IEEE-Software-Protelis:
-  Paper-2019-LMCS-Share-FastRep:
-  Paper-2019-PMC-SmartCam:
-  Paper-2020-LMCS-TimeFluid:
   Template-ACM-Article:
   Template-Elsevier-Article:
   Template-Elsevier-CAS-DC:
@@ -155,37 +149,36 @@ _automerge: &automerge
 
 files:
   Automerge on non-CI events:
-    *automerge
 
   buildSrc infrastructure:
-    AlchemistSimulator:
-      Alchemist: develop
-    DanySK:
-      <<: *gradle_plugins
-      conrec:
-      gson-extras:
-      java-quadtree:
-      jirf:
-      khttp:
-      listset:
-      OrchidForScience:
-      Template-for-Kotlin-Gradle-Projects:
-      Template-for-Kotlin-JVM-Projects:
-      Thread-Inheritable-Resource-Loader-for-Java:
-      upgradle:
-    Protelis:
-      Protelis: develop
-      Protelis-Demo:
-      Protelis-KDoc-generator: develop
+    #AlchemistSimulator:
+      #Alchemist: develop
+    #DanySK:
+      #<<: *gradle_plugins
+      #conrec:
+      #gson-extras:
+      #java-quadtree:
+      #jirf:
+      #khttp:
+      #listset:
+      #OrchidForScience:
+      #Template-for-Kotlin-Gradle-Projects:
+      #Template-for-Kotlin-JVM-Projects:
+      #Thread-Inheritable-Resource-Loader-for-Java:
+      #upgradle:
+    #Protelis:
+      #Protelis: develop
+      #Protelis-Demo:
+      #Protelis-KDoc-generator: develop
 
-  Compatibility check for Java 11 projects:
-    *java11_or_above
+  #Compatibility check for Java 11 projects:
+    #*java11_or_above
 
-  Compatibility check for Linux-only Java 8 projects:
-    *java8_linux
+  #Compatibility check for Linux-only Java 8 projects:
+    #*java8_linux
 
-  Disable deployment script:
-    *no_deployment
+  #Disable deployment script:
+    #*no_deployment
 
   editor config:
 
@@ -219,8 +212,8 @@ files:
   #Gradle multi-OS build:
     #<<: *java_multi_os
 
-  Java multiplatform continuous integration pipeline:
-    *java_multiplatform
+  #Java multiplatform continuous integration pipeline:
+    #*java_multiplatform
 
   Jekyllrb site build:
     DanySK:
@@ -228,39 +221,23 @@ files:
     Fluidware-Project:
       fluidware-project.github.io:
 
-  Kotlin QA for Gradle:
-    AlchemistSimulator:
-      Alchemist: develop
-    DanySK:
-      <<: *gradle_plugins
-      conrec:
-      OrchidForScience:
-      Template-for-Kotlin-Gradle-Projects:
-      Template-for-Kotlin-JVM-Projects:
-      Thread-Inheritable-Resource-Loader-for-Java:
-      upgradle:
-    Protelis:
-      Protelis: develop
-      Protelis-Demo:
-      Protelis-KDoc-generator: develop
-      
-  LaTeX build and delivery:
-    DanySK:
-      *my_latex
-    gciatto-unibo:
-      thesis-template:
-    metaphori:
-      paper-2021-coordination-scafiweb:
-      paper-2021-jcee-optc:
+  #LaTeX build and delivery:
+    #DanySK:
+      #*my_latex
+    #gciatto-unibo:
+      #thesis-template:
+    #metaphori:
+      #paper-2021-coordination-scafiweb:
+      #paper-2021-jcee-optc:
 
-  LaTeX diff:
-    DanySK:
-      *my_latex
-    gciatto-unibo:
-      thesis-template:
-    metaphori:
-      paper-2021-coordination-scafiweb:
-      paper-2021-jcee-optc:
+  #LaTeX diff:
+    #DanySK:
+      #*my_latex
+    #gciatto-unibo:
+      #thesis-template:
+    #metaphori:
+      #paper-2021-coordination-scafiweb:
+      #paper-2021-jcee-optc:
 
 secrets:
   AUTOMERGE_TOKEN:
