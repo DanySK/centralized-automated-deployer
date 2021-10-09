@@ -10,9 +10,7 @@ _protelis_projects: &protelis
   Protelis-KDoc-generator: develop
   Protelis-Parser: develop
 
-_my_latex: &my_latex
-  Course-Simulation-Basics:
-  Curriculum-Vitae:
+_my_latex_with_diff: &my_latex_with_diff
   Template-ACM-Article:
   Template-Elsevier-Article:
   Template-Elsevier-CAS-DC:
@@ -24,6 +22,11 @@ _my_latex: &my_latex
   Template-LaTeX-LMCS:
   Template-LaTeX-LNCS:
   Template-LaTeX-MDPI:
+
+_my_latex: &my_latex
+  <<: *my_latex_with_diff
+  Course-Simulation-Basics:
+  Curriculum-Vitae:
 
 _gradle_plugins: &gradle_plugins
   git-sensitive-semantic-versioning-gradle-plugin:
@@ -235,7 +238,7 @@ files:
 
   LaTeX diff:
     DanySK:
-      *my_latex
+      *my_latex_with_diff
     gciatto-unibo:
       thesis-template:
     metaphori:
