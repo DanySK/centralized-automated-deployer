@@ -221,6 +221,9 @@ files:
     Fluidware-Project:
       fluidware-project.github.io:
 
+  LaTeX new build
+    DanySK:
+      <<: *my_latex
   #LaTeX build and delivery:
     #DanySK:
       #*my_latex
@@ -276,3 +279,4 @@ secrets:
   SURGE_TOKEN:
     AlchemistSimulator: Alchemist
     Protelis: Protelis
+
