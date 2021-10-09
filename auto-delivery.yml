@@ -221,7 +221,7 @@ files:
     Fluidware-Project:
       fluidware-project.github.io:
 
-  LaTeX new build
+  LaTeX new build:
     DanySK:
       <<: *my_latex
   #LaTeX build and delivery:
@@ -233,14 +233,14 @@ files:
       #paper-2021-coordination-scafiweb:
       #paper-2021-jcee-optc:
 
-  #LaTeX diff:
-    #DanySK:
-      #*my_latex
-    #gciatto-unibo:
-      #thesis-template:
-    #metaphori:
-      #paper-2021-coordination-scafiweb:
-      #paper-2021-jcee-optc:
+  LaTeX diff:
+    DanySK:
+      *my_latex
+    gciatto-unibo:
+      thesis-template:
+    metaphori:
+      paper-2021-coordination-scafiweb:
+      paper-2021-jcee-optc:
 
 secrets:
   AUTOMERGE_TOKEN:
