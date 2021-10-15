@@ -1,11 +1,18 @@
 name: Build LaTeX and deploy on GitHub Releases
 on:
   push:
+    tags: '*'
+    branches-ignore:
+      - 'autodelivery**'
+      - 'bump-**'
+      - 'renovate/**'
     paths-ignore:
       - 'README.md'
       - 'CHANGELOG.md'
       - 'LICENSE'
       - 'renovate.json'
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   Setup-Compile-Deploy:
@@ -13,4 +20,4 @@ jobs:
     steps:
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: DanySK/compile-and-publish-all-latex@0.1.24
+        uses: DanySK/compile-and-publish-all-latex@0.1.26
