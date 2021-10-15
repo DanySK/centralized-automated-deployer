@@ -153,27 +153,6 @@ _automerge: &automerge
 files:
   Automerge on non-CI events:
 
-  buildSrc infrastructure:
-    #AlchemistSimulator:
-      #Alchemist: develop
-    #DanySK:
-      #<<: *gradle_plugins
-      #conrec:
-      #gson-extras:
-      #java-quadtree:
-      #jirf:
-      #khttp:
-      #listset:
-      #OrchidForScience:
-      #Template-for-Kotlin-Gradle-Projects:
-      #Template-for-Kotlin-JVM-Projects:
-      #Thread-Inheritable-Resource-Loader-for-Java:
-      #upgradle:
-    #Protelis:
-      #Protelis: develop
-      #Protelis-Demo:
-      #Protelis-KDoc-generator: develop
-
   #Compatibility check for Java 11 projects:
     #*java11_or_above
 
@@ -217,6 +196,14 @@ files:
 
   #Java multiplatform continuous integration pipeline:
     #*java_multiplatform
+
+  Gradle plugins CI:
+    DanySK:
+      git-sensitive-semantic-versioning-gradle-plugin:
+      gradle-kotlin-qa:
+      gradle-java-qa:
+      publish-on-central:
+      Template-for-Gradle-Plugins:
 
   Jekyllrb site build:
     DanySK:
