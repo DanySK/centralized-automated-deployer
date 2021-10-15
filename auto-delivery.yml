@@ -183,11 +183,6 @@ files:
       <<: *my_jekyll
       Course-Laboratory-of-Software-Systems:
       Gradle-Wrapper:
-    gciatto-unibo:
-      thesis-template:
-    metaphori:
-      paper-2021-coordination-scafiweb:
-      paper-2021-jcee-optc:
     Protelis:
       *protelis
 
