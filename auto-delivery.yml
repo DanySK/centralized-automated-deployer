@@ -212,20 +212,10 @@ files:
   #LaTeX build and delivery:
     #DanySK:
       #*my_latex
-    #gciatto-unibo:
-      #thesis-template:
-    #metaphori:
-      #paper-2021-coordination-scafiweb:
-      #paper-2021-jcee-optc:
 
   LaTeX diff:
     DanySK:
       *my_latex_with_diff
-    gciatto-unibo:
-      thesis-template:
-    metaphori:
-      paper-2021-coordination-scafiweb:
-      paper-2021-jcee-optc:
 
 secrets:
   AUTOMERGE_TOKEN:
@@ -265,3 +255,4 @@ secrets:
     AlchemistSimulator: Alchemist
     Protelis: Protelis
 
+1\
